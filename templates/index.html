@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title></title>
+	<link href='{{ STATIC_URL }}/css/reset.css' rel="stylesheet" />
+	<link href='{{ STATIC_URL }}/css/styles.css' rel="stylesheet" />
+
+    <script src="{{ STATIC_URL }}/js/main.js"></script>
+    <script src="{{ STATIC_URL }}js/jquery-2.1.3.min.js"></script>
+    <script src="{{ STATIC_URL }}js/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+	<header class='fsHeader'>
+		<div class='headerWrapper'>
+			<img class="fl" src='http://faststreamtech.com/wp-content/uploads/2014/01/logo1.png' />
+
+			<div class="clear"></div>
+		</div>
+	</header>
+    <article>
+        <div class="articleWrapper">
+            <div id="imageList">
+                <!-- Images will be load here-->
+            </div>
+            <div class="clear"></div>
+        </div>
+    </article>
+
+    <footer class="fsFooter">
+        <div class="footerWrap">
+            &copy; 2015 Anoop SM
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        $(function(){
+            fs.main.init({});
+        });
+    </script>
+</body>
+
+</html>
+
+
+<!--
+
+    block Element
+      div, header, footer, section, body, h1 to h6, form ....  // take full width from one end to another end
+
+    inline-block Element
+        input, button // this take default width
+
+    inline Element
+      span, img // this does not take width.
+
+
+-->
