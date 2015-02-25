@@ -22,7 +22,6 @@ var htmlBody = '';
 
         displayImage: function(images){
             //console.log(images.items);
-            htmlBody = '<h1>Images</h1> <br><br>';
             var imageList = images.items;
             console.log(imageList)
             for (lists in imageList){

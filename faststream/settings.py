@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+from django.conf import global_settings
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
@@ -36,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'faststream'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -81,14 +83,17 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = ''
 
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, 'templates/'),
 )
 
-STATIC_PATH = os.path.join(BASE_DIR,'static')
-STATIC_ROOT_PATH = os.path.join(BASE_DIR,'static_root')
+
+STATIC_ROOT_PATH = os.path.join(BASE_DIR, 'static_resources')
 STATIC_ROOT = STATIC_ROOT_PATH
+
+STATIC_PATH = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = (
     STATIC_PATH,
 )
